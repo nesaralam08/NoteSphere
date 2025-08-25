@@ -3,7 +3,7 @@ const cloudinary = require('../utils/cloudinary')
 
 const uploadQues = async (req, res) => {
     try {
-        const { subject_name, course, year, semester, university, mid, student_id } = req.body;
+        const { subject_name, course, year, semester, university, student_id } = req.body;
         if (!req.file) {
             return res.status(400).json({ success: false, message: "No file uploaded" });
         }
@@ -14,7 +14,6 @@ const uploadQues = async (req, res) => {
             year: Number(year),
             semester: Number(semester),
             university,
-            mid: Number(mid),
             file_url: req.file.path,
             file_id: req.file.filename,
             student_id,
