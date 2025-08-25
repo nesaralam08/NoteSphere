@@ -28,31 +28,35 @@ Files (PDFs, images, docs) are securely stored in **Cloudinary**, while metadata
 ---
 
 ## 📂 Project Structure
+
+```bash
 NoteSphere/
 │── backend/
-│ ├── controller/
-│ │ └── notesController.js
-│ ├── model/
-│ │ └── notesModel.js
-│ ├── routes/
-│ │ └── notesRouter.js
-│ ├── utils/
-│ │ ├── cloudinary.js
-│ │ └── multer.js
-│ ├── app.js / server.js
-│ └── package.json
+│   ├── controller/
+│   │   └── notesController.js      # CRUD logic
+│   ├── model/
+│   │   └── notesModel.js           # Mongoose schema
+│   ├── routes/
+│   │   └── notesRouter.js          # Express routes
+│   ├── utils/
+│   │   ├── cloudinary.js           # Cloudinary config
+│   │   └── multer.js               # Multer config
+│   ├── app.js / server.js          # Entry point
+│   └── package.json
 │
 │── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── services/api.js # Axios API calls
-│ │ └── App.js
-│ ├── public/
-│ └── package.json
+│   ├── src/
+│   │   ├── components/             # Reusable UI components
+│   │   ├── pages/                  # Page-level components
+│   │   ├── services/
+│   │   │   └── api.js              # Axios API calls
+│   │   └── App.js
+│   ├── public/
+│   └── package.json
 │
 │── .gitignore
 │── README.md
+
 
 
 ---
