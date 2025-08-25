@@ -60,7 +60,7 @@ const updateNotes = async (req, res) => {
       return res.status(404).json({ success: false, message: "Note not found" });
     }
 
-    res.json({ success: true, message: "Note updated successfully", note: updatedNote });
+    res.json({ success: true, message: "Note updated successfully", result: updatedNote });
 
   } catch (error) {
     console.error("Update Error:", error);

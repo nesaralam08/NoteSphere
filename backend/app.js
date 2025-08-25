@@ -7,6 +7,7 @@ const connectDB = require('./database/connectDB')
 const PORT = process.env.PORT || 4000
 const studentRouter = require('./router/studentRouter')
 const notesRouter = require('./router/notesRouter')
+const quesRouter = require('./router/quesRouter')
 
 app.use(express.urlencoded({limit:"50mb",extended:true}))
 app.use(express.json({ limit: "50mb" }))
@@ -16,6 +17,7 @@ connectDB(process.env.MONGO_URL)
 
 app.use('/api',studentRouter)
 app.use('/api',notesRouter)
+app.use('/api',quesRouter)
 
 app.get('/alam',(req,res)=>{
     res.send("Nesar Alam")

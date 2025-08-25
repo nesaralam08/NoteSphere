@@ -23,7 +23,8 @@ const QuesPaperSchema = new mongoose.Schema({
     },
     mid: {
         type: Number,
-        enum: [1, 2],
+        enum: [1, 2,3,4,5],
+        default:null
     },
     file_url: {
         type: String,
