@@ -77,12 +77,12 @@ npm run dev   # nodemon
 node app.js
 cd frontend
 npm install
-npm start
+npm run dev
 ```
 ## 👨‍💻 Author
 
 **Nesar Alam**  
-Final Year B.Tech Student | MERN Stack Developer | Machine Learning Enthusiast | College Topper in DSA (92/100)  
+Final Year B.Tech Student | MERN Stack Developer | Machine Learning Enthusiast | College Topper in DSA (91/100)  
 
 - 🌐 [Portfolio](https://nesar-portfolio.vercel.app/)  
 - 💻 [GitHub](https://github.com/nesaralam08)  
