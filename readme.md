@@ -57,9 +57,7 @@ NoteSphere/
 │── .gitignore
 │── README.md
 
-
-
----
+```
 
 ## ⚙️ Setup Instructions
 
